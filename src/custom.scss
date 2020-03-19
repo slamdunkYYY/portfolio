@@ -1,0 +1,87 @@
+h3, .h3 {
+    font-size: 1.5rem;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    h1 {
+        font-size: 1.25rem;
+        margin-bottom: 0;
+    }
+}
+.content {
+    padding: 0.5rem 1rem;
+    padding-top: 60px;
+    .content-inner-container {
+        position: relative;
+    }
+    .anchor {
+        position: absolute;
+        left: 0px;
+        top: -60px;
+    }
+    .projects-detail {
+        .img-wrapper {
+            overflow: hidden;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            border: 1px solid #aeacac;
+            @media (min-width: 768px) {
+                height: 200px;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                cursor: pointer;
+            }
+        }
+        &.react-project {
+            .img-wrapper {
+                @media (min-width: 768px) {
+                    height: 250px;
+                }
+                @media (min-width: 992px) {
+                    height: 330px;
+                }
+            }
+        }
+    }
+    .project-block {
+        text-align: center;
+        margin-bottom: 30px;
+    }    
+}
+.project-modal {
+    .demo-link {
+        margin-bottom: 1rem;
+    }
+    .carousel-indicators li {
+        background-color: #000;
+    }
+    .wp-project-demo, .react-project-demo {
+        margin-top: 20px;
+        max-width: 700px;
+        height: auto;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &.project-modal-react {
+        .demo-link {
+            margin-bottom: 0;
+        }
+        .github-link {
+            margin-top: 1rem;
+        }
+        .extra-images {
+            margin-top: 1rem;
+        }
+    }
+}
+.footer {
+    padding: 0.5rem 1rem;
+}
+
