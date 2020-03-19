@@ -37,10 +37,10 @@ const reactProjects = [
   {
     name: 'React CMS',
     img: [
-      '/assets/CMS_1.png',
-      '/assets/CMS_2.png',
-      '/assets/CMS_3.png',
-      '/assets/CMS_4.png',
+      './assets/CMS_1.png',
+      './assets/CMS_2.png',
+      './assets/CMS_3.png',
+      './assets/CMS_4.png',
     ],
     keyTech: 'React, React router V4, Redux, Axios, Ant Design, Webpack, LESS, Node js(Express), Mongoose, AWS, Nginx, Mongodb Atlas, Yarn, NPM',
     detail: '<p>This CMS application is a frontend and backend separating application developed by React on the frontend and Node js on the backend. It uses Mongodb Altlas cloud service to save the data and database language is MongoDB. With the project, it has several modules including login, category check, update and create new, product check, update and create. The application is using Ant Design as the UI framework and come with LESS. It is using Webpack to import these two library plugins. Regarding to the React part, it uses React router V4 to control the app path and uses Axios for the Ajax request. The ajax request includes both from backend API endpoint as well as third party API. React Redux is also used to save and maintain React state value. With the backend, it uses Node js and Express framework. The model level is MongoDB. I use Mongoose to create model and with the live demo app, it uses Mongodb Atlas to save data. The application is deployed on AWS and the Nginx is used for server. </p>',
@@ -51,7 +51,7 @@ const reactProjects = [
   },
   {
     name: 'React Chat Application',
-    img: ['/assets/Job_seeker.png'],
+    img: ['./assets/Job_Seeker.PNG'],
     keyTech: 'React, React router V4, Redux, Axios, Ant Design Mobile, Webpack, LESS, Socket.io, Node js, Mongoose, AWS, Nginx, Mongodb Atlas,Yarn, NPM',
     detail: '<p>This chat application is a frontend and backend separating application developed by React on the frontend and Node js on the backend. It uses Mongodb Altlas cloud service to save the data and database language is MongoDB. With the project, it has several modules including login, chat - sending and receiving message and chat people list. The application is using Ant Design mobile as the UI framework and come with LESS. It is using Webpack to import these two library plugins. Regarding to the React part, it uses React router V4 to control the app path and uses Axios for the Ajax request. The ajax request includes both from backend API endpoint as well as third party API. React Redux is also used to save and maintain React state value. With the backend, it uses Node js and Express framework. The model level is MongoDB. I use Mongoose to create model and with the live demo app, it uses Mongodb Atlas to save data. Both frontend and backend are using Socket.io for the chat message transfer. The message will be store in Redux on frontend once got from server and save on MongoDB cloud platform. The application is deployed on AWS and the Nginx is used for server. </p>',
     demoLink: 'http://ec2-18-216-163-204.us-east-2.compute.amazonaws.com/job-seeker-app',
@@ -60,11 +60,11 @@ const reactProjects = [
   },
   {
     name: 'Portfolio page',
-    img: ['/assets/portfolio.png'],
+    img: ['./assets/portfolio.PNG'],
     keyTech: 'React, SCSS, Github Page, Bootstrap React, Yarn',
     detail: '<p>This portfolio page you are viewing now is built by React. It deploys on Github pages and uses Bootstrap React for the UI library. Extra styles are sticky header and smooth scroll.</p>',
-    demoLink: 'http://ec2-18-216-163-204.us-east-2.compute.amazonaws.com/job-seeker-app',
-    githubLink: 'https://github.com/slamdunkYYY/job-seeker-deploy'
+    demoLink: 'https://slamdunkyyy.github.io/portfolio/',
+    githubLink: 'https://github.com/slamdunkYYY/portfolio'
   }
 ]
 
@@ -72,9 +72,9 @@ const WordPressProjects = [
   {
     name: 'WordPress Theme Development',
     img: [
-      '/assets/WP_theme_1.png',
-      '/assets/WP_theme_2.png',
-      '/assets/WP_theme_3.png',
+      './assets/WP_theme_1.png',
+      './assets/WP_theme_2.png',
+      './assets/WP_theme_3.png',
     ],
     keyTech: 'WordPress API Hook, WordPress core API, WordPress shortcode, PHP, JQuery, CSS, Bootstrap, Git',
     detail: '<p>I created our company WP theme for commercial use. My template has one global setting section which can create basic global setting such as heading, footer, logo and so on. On each page or post, I also created the setting section for page or post unique. The title and banner can be set on here. I also created different page templates and those will load the matching different header and footer. Particularly, when choosing the landing page template, it will have a unique textarea for to add custom script to header and footer. I also create two WordPress hooks, one is in the header and another is on the footer so people can insert their code to this hook. This template also has the connection with some WordPress plugins such as Slider Revolution, like loading existing slider and choose it as the banner and WPBakery, like extends the existing functionalities. Besides, I also created some widget area to the template, so people can insert widget to that areas.</p><p>The version control is using Git.</p>',
@@ -82,7 +82,7 @@ const WordPressProjects = [
   },
   {
     name: 'Elysian Energy',
-    img: ['/assets/elysian_energy.jpg'],
+    img: ['./assets/elysian_energy.jpg'],
     keyTech: 'WordPress development, PHP, MySQL, CSS, Bootstrap, JQuery',
     detail: '<p>I built the entire website for Elysian Energy using WordPress, CSS, Bootstrap 3 and JQuery. Apart from the general website development. I created the plan search functionality on the plan search landing page: <a href="https://elysianenergy.com.au/electricity-plans/" target="_blank">https://elysianenergy.com.au/electricity-plans/</a>. When input the postcode, it will call Ajax and the JQuery autofill library to get the dropdown list of matching postcode area from database. When choose one area, it will apply Ajax again and retrieve the plan data from the database and display the detail.</p><p>I also did the Newsletter development for this client</p>',
     demoLink: 'https://elysianenergy.com.au/'
@@ -96,14 +96,14 @@ const WordPressProjects = [
   },
   {
     name: 'Horan Bird',
-    img: ['/assets/Horan_Bird.jpg'],
+    img: ['./assets/Horan_Bird.jpg'],
     keyTech: 'WordPress development, WordPress shortcode development, WordPress plugin functionality extend, PHP, MySQL, CSS, Bootstrap, JQuery',
     detail: '<p>I created this website by WordPress. This website uses a lot of custom shortcodes. With each quote button, I create a shortcode with different condition by passing different value parameters. It will popup a new window with or without the title and if there is a postcode input field, it will display another different type of popup window with the postcode and production selector. I extends the Gravity form plugin basic functionality with the shortcode so as to finish this postcode input function. I also create the search function via MySQL, PHP and JQuery for this search page: <a href="https://www.horanandbird.com.au/electricity-2-2/" target="_blank">https://www.horanandbird.com.au/electricity-2-2/</a>. After submit the postcode, it will retrieve data from MySQL and check if there is a plan existing.</p>',
     demoLink: 'https://www.horanandbird.com.au/'
   },
   {
     name: 'Rom Control',
-    img: ['/assets/rom_control.png'],
+    img: ['./assets/rom_control.png'],
     keyTech: 'WordPress development, WordPress shortcode development, WordPress session control, WP Bakery theme functionality extend, PHP, CSS, Bootstrap, JQuery',
     detail: '<p>The site is a WordPress site. With different type of services, it has different theme color for each one. I create different theme color patten for the site. I also the default layout of WPBakery theme column element, adding the overlay attribute setting on the frontend and the overlay html code, so the part, for example on the "INDUSTRIAL ELECTRONIC ENGINEERING SOLUTIONS" of the homepage will have the overlay. I also use PHP session for the form, when a person submitted the form, within the session valid time, that person can download file directly without filling in that form. After the form submitting, it will jump to a new download page to download the brochure. If the session is not active or expired, that download page will not have the download button. That entire section is using WordPress Session, Contact Form7 plugin and bootstrap modal popup.</p>',
     demoLink: 'https://www.rom-control.com.au/'
@@ -358,10 +358,10 @@ class App extends Component {
               <h2>Downloads</h2>
               <p>Please feel free to download my resume and the skills description</p>
               <div>
-                <a target="_blank" rel="noopener noreferrer" href="/assets/Shuangyue_Yin_CV.pdf">Resume</a>
+                <a target="_blank" rel="noopener noreferrer" href="./assets/Shuangyue_Yin_CV.pdf">Resume</a>
               </div>
               <div>
-                <a target="_blank" rel="noopener noreferrer" href="/assets/Shuangyue_Yin_Cover_letter.pdf">Skills description</a>
+                <a target="_blank" rel="noopener noreferrer" href="./assets/Shuangyue_Yin_Cover_letter.pdf">Skills description</a>
               </div>
             </div>
             <hr></hr>
