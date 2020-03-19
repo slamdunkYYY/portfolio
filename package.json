@@ -1,4 +1,5 @@
 {
+  "homepage": "http://slamdunkYYY.github.io/portfolio"-
   "name": "portfolio-moon",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +12,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.4.1",
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0-beta.17",
@@ -18,6 +20,8 @@
     "react-scripts": "3.4.0"
   },
   "scripts": {
+	"predeploy": "npm run build",
+	"deploy": "gh-pages -d build"，
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
